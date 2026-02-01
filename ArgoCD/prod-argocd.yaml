@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/ketan02-git/project1.git
     targetRevision: prod
-    path: helm/node-app
+    path: node-app
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
