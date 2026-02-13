@@ -1,4 +1,5 @@
 replicaCount: 3
+namespace: prod
 
 image:
   repository: cloudketan/node-project
