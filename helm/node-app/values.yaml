@@ -1,41 +1,31 @@
 replicaCount: 1
 namespace: dev
-
 image:
   repository: cloudketan/node-project
-  tag: "v1-dev"
+  tag: "89f5c54"
   pullPolicy: IfNotPresent
-
 service:
   type: NodePort
   port: 80
   nodePort: 30007
-
 containerPort: 3000
-
 env:
   ENVIRONMENT: dev
   PORT: "3000"
-
 resources: {}
-
 ingress:
   enabled: false
   annotations: {}
   hosts: []
   tls: []
-
 autoscaling:
   enabled: false
-
 podLabels: {}
 podAnnotations: {}
-
 # Fix ServiceAccount template
 serviceAccount:
   create: true
   name: ""
-
 # Fix httproute template
 httpRoute:
   enabled: false
