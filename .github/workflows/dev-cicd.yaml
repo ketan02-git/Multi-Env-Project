@@ -6,7 +6,7 @@ on:
       - dev
       
 jobs:
-  build-and-deploy:
+  build-and-deploy-prod:
     runs-on: self-hosted
 
     steps:
