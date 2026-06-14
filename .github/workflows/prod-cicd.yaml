@@ -33,7 +33,7 @@ jobs:
     - name: Build and Push Docker Image
       run: |
         TAG=${GITHUB_SHA::7}
-        IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/simple-node-app"
+        IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/simple-node-app-prod"
 
         docker build -t $IMAGE_NAME:$TAG ./prod-app
         docker push $IMAGE_NAME:$TAG
