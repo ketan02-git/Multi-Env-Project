@@ -53,8 +53,8 @@ jobs:
 
     - name: Commit and Push Updated Manifest
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config user.name "ketan02-git"
+        git config user.email "ambureketan@gmail.com"
     
         git add helm/values.yaml
         git commit -m "chore: update image tag to $NEW_TAG" || exit 0
