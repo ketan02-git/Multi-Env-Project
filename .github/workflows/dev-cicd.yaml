@@ -47,7 +47,7 @@ jobs:
 
     - name: Update Helm values.yaml
       run: |
-        yq e -i '.image.tag = strenv(NEW_TAG)' helm/values.yaml
+        yq e -i '.image.tag = strenv(NEW_TAG)' helm/node-app/values.yaml
 
     - name: Commit and Push Updated Manifest
       run: |
