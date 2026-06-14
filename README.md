@@ -4,14 +4,6 @@ This repository contains a multi-environment Node.js project deployed using **Do
 
 ---
 
-## Repository Structure
-
-main/
-├─ ArgoCD/
-│ ├─ dev-argocd.yaml # ArgoCD application manifest for development environment
-│ └─ prod-argocd.yaml # ArgoCD application manifest for production environment
-
-
 ### Branches
 
 - **main**: Contains ArgoCD configuration manifests for all environments.
@@ -45,19 +37,6 @@ This folder contains **ArgoCD Application manifests** for deploying the project 
 
 This folder contains **ArgoCD Application manifests** for deploying the project in different environments.
 
-#### `dev-argocd.yaml`
-
-- Defines the ArgoCD application for the **development environment**.
-- Points to the `dev` branch of the repository.
-- References the Helm chart in `helm/node-app/` and can override values using `values-dev.yaml`.
-
-#### `prod-argocd.yaml`
-
-- Defines the ArgoCD application for the **production environment**.
-- Points to the `prod` branch of the repository.
-- References the Helm chart in `helm/node-app/` and can override values using `values-prod.yaml`.
-
----
 ### 1. **Node.js Application**
 
 - Located in the `app/` folder in `dev` branch and `prod-app/` folder in `prod` branch (recommended: unify naming).
