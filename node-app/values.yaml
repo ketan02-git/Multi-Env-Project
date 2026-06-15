@@ -1,7 +1,7 @@
 replicaCount: 3
 namespace: prod
 image:
-  repository: cloudketan/node-project
+  repository: cloudketan/prod-node-app
   tag: "3eddc94"
   pullPolicy: IfNotPresent
 service:
