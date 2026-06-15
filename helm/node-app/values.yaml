@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 3
 namespace: dev
 image:
   repository: cloudketan/simple-node-app
