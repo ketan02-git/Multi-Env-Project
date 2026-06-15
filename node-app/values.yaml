@@ -1,41 +1,31 @@
 replicaCount: 3
 namespace: prod
-
 image:
   repository: cloudketan/node-project
-  tag: "v1-prod"
+  tag: "3eddc94"
   pullPolicy: IfNotPresent
-
 service:
   type: NodePort
   port: 80
   nodePort: 30008
-
 containerPort: 3000
-
 env:
   ENVIRONMENT: prod
   PORT: "3000"
-
 resources: {}
-
 ingress:
   enabled: false
   annotations: {}
   hosts: []
   tls: []
-
 autoscaling:
   enabled: false
-
 podLabels: {}
 podAnnotations: {}
-
 # Fix ServiceAccount template
 serviceAccount:
   create: true
   name: ""
-
 # Fix httproute template
 httpRoute:
   enabled: false
