@@ -1,8 +1,8 @@
 replicaCount: 1
 namespace: dev
 image:
-  repository: cloudketan/node-project
-  tag: "1cc15d3"
+  repository: cloudketan/simple-node-app
+  tag: "c5bbc2a"
   pullPolicy: IfNotPresent
 service:
   type: NodePort
