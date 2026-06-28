@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ketan02-git/project1.git
+    repoURL: https://github.com/ketan02-git/Multi-Env-Project.git
     targetRevision: prod
     path: node-app
   destination:
